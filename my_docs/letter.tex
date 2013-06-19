@@ -1,0 +1,116 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt]{article}
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+  \usepackage[dvips]{graphicx}\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Matteo}
+\def\familyname{Borgato}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Matteo Borgato}\\[.35ex]
+\small\itshape%
+Sint Nicolaasstraat 27C\\
+1012NJ Amsterdam, The Netherlands\\[.35ex]
+\Telefon~+31 (0) 621 360018\\
+\Letter~\href{mailto:borgato.matteo@gmail.com}{borgato.matteo@gmail.com}
+\end{minipage}\\[1em]
+%
+\begin{minipage}[t]{.4\textwidth}
+\raggedright%
+{\bfseries Booking.com}\\[.35ex]
+\small\itshape%
+Rembrandt Square, Herengracht 597\\
+1017 CE Amsterdam, The Nederlands
+\end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\begin{minipage}[t]{.4\textwidth}
+\raggedleft % US style
+\today
+%April 6, 2006 % US informal style
+%05/04/2006 % UK formal style
+\end{minipage}\\[2em]
+\raggedright
+Dear Madam Maizl,\\[0.5em]
+%
+ Please accept this letter and the attached Curriculum Vitae as my application for the role of Front-end Web Developer advertised on LinkedIn.com.
+
+I believe that, with my skills, experience and attitudes, I could bring a lot to the company, I fulfill all the requirements and I am excited about the prospect. My background --- experience of 4 years --- is focused on the Front-end side and I hope to develop my career further within an important agency as Booking.com working with other skilled and prepared developers.
+
+I am proficient using HTML, CSS, JavaScript (Jquery and Mootools), PHP and Ruby on Rails. \\
+Currently I have been working for 8 months in Fitmo BV (\url{http://fitmo.com} ) based in Amsterdam, involved in the Front-end side, creating and rendering every Web page from the proper mockups, adding animations and effects using JavaScript and CSS3 features, and working closely with the back-end developers and designers within the company.
+
+In my previous job I have worked for more than 3 years as both Designer and Front-end developer therefore I have excellent knowledge and experience of Adobe Photoshop and Illustrator as well. I developed several projects for regional and municipal public administration Web sites, and as the only Front-end developer I built and followed all the works.
+
+I was involved building custom interfaces, CMS, Web portals, Web applications and the clients were always impressed with my diplomacy skills and the way I was able to communicate to find out exactly what they wanted, and then bring the planned vision to life, working under their constant pressure.
+
+W3C standards, SEO and capabilities of different Web browsers are factors I always keep in mind while designing and developing Web applications and my referees can speak for my excellent coding standards.
+
+I enjoy working in a team. I regularly volunteer some time to an italian journalist for his mobile and Web blog.
+
+Some of my personal and professional projects are available on my website at \url{http://matteoborgato.com}.
+
+I am available to come in for an interview at any time, and would appreciate the opportunity to meet with you and your staff. I hope that I am granted an opportunity to talk and perhaps meet with you in the very near future. I hope to hear from you soon.
+ \\[1.5em]
+
+Yours sincerely,
+
+%Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+%Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Matteo Borgato}\\
+%
+\vfill%
+%{\slshape Enclosure}
+%{\slshape Attachment: curriculum vit\ae{}}
+\end{document}
