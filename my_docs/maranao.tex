@@ -1,0 +1,100 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[roman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[portuguese]{babel}
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\firstname{Antonio Francisco }
+\familyname{de Menezes Lunes}
+\title{}               % optional, remove the line if not wanted
+\address{Rua: 110, casa: 403}{Bairro Parque Dois Irm{\~{a}}os Fortaleza, CE}    % optional, remove the line if not wanted
+\mobile{(85) 8774 7745 / 9685 1077}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{lunesmaranhao@bol.com.br}                      % optional, remove the line if not wanted
+%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[64pt]{maranhao}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{Curriculum Vitae}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Informa\c{c}\~{o}es gerais}
+\cvline{Idade}{52 anos}
+\cvline{Nacionalidade}{Brasileiro}
+\cvline{Estado civil}{Casado}
+
+\section{Objectivo}
+\cvline{}{Pretendo trabalhar na sua empresa com o objetivo de adquirir mais conhecimentos e tamb\'{e}m acrescentar minhas experi\^{e}ncias junto da sua equipe.}  % arguments 3 to 6 can be left empty
+
+\section{Forma\c{c}\~{a}o}
+\cventry{2000}{ Escola T\'{e}cnica de Maracana\'{u}}{}{}{}{T\'{e}cnico de Seguran\c{c}a do Trabalho}\newline{}
+\cventry{1984}{Ot\'{a}vio Terceiro de Farias}{}{}{}{T\'{e}cnico em Cr\'{e}dito e Finan\c{c}as}
+
+\section{Experi\^{e}ncia professional}
+\cventry{2009 -- 2012}{Secretaria Municipal de Sa\'{u}de}{Cargo: Assessor T\'{e}cnico}{}{}{Atividades: assessorar o superior imediato no desempenho de suas fun\c{c}\~{o}es, auxiliando na execu\c{c}\~{a}o de suas tarefas administrativas e em reuni\~{o}es, marcando e cancelando compromissos. Acompanhar a execu\c{c}\~{a}o de tarefas a serem operacionalizadas em outras \'{a}reas para garantir o resultado esperado. Recepcionando pessoas internas e externas \'{a} comunidade.}\newline{}
+
+\cventry{1996 -- 2008}{ABS}{Cargo: Assessor}{}{}{Atividades: Visitar clientes, vender e desenvolver estrat\'{e}gias de marketing e propagandas indoor, formalizar negocia\c{c}\~{o}es, solucionar eventuais problemas. Formalizar parcerias de neg\'{o}cio visando fidelizar o cliente e fechar neg\'{o}cios com valor agregado. Coordenar exposi\c{c}\~{a}o, agendamento de pagamentos}\newline{}
+
+\cventry{1991 -- 1995}{BIC BANCO}{Cargo: Caixa Executivo}{}{}{Atividades: Realizar opera\c{c}\~{o}es de caixa; fornecer documentos aos clientes e executar atividades de cobran\c{c}a. Apoiar as atividades da ag\^{e}ncia e demais setores do banco; administrar fluxo de malotes; compensar documentos e controlar documenta\c{c}\~{a}o de arquivos. Estabelecer comunica\c{c}\~{a}o com os clientes, prestando-lhes informa\c{c}\~{o}es sobre os servi\c{c}os banc\'{a}rios.}\newline{}
+
+\cventry{1982 -- 1990}{BANFORT}{Cargo: Caixa Executivo}{}{}{Atividades: Respons\'{a}vel pelo atendimento a usu\'{a}rios de servi\c{c}os banc\'{a}rios, bem como receber contas e tributos e processar remessa e pagamento de numer\'{a}rios,  compensa\c{c}\~{a}o de documentos e controle de documenta\c{c}\~{a}o de arquivos. Conhecimentos nas atividades da ag\^{e}ncia, al\'{e}m de fornecimento de documentos aos clientes e execu\c{c}\~{a}o de atividades de cobran\c{c}a.}\newline{}
+
+\section{Qualifica\c{c}\~{o}es}
+\cvline{2014}{Curso Linux (Universidade do Trabalho Digital)}
+\cvline{2012}{Curso Avan\c{c}ado para Locutores (FM Dom Bosco)}
+\cvline{2008}{Inform\'{a}tica completa (KENNEDY)}
+\cvline{1998}{Curso de Avalia\c{c}\~{a}o de Im\'{o}veis (CETREDE)}
+
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

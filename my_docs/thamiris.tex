@@ -1,0 +1,120 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[red]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Thamiris }
+\familyname{ Da Silva Lunes}
+\title{Resume Thamiris Da Silva Lunes}               % optional, remove the line if not wanted
+\mobile{mobile: +39 349 42 46 616}
+\email{email: thamirislunes@hotmail.com}                      % optional, remove the line if not wanted
+\photo[64pt]{thamiris1}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Informazioni generali}
+\cvline{Anno di nascita}{1987}
+\cvline{Sesso}{Femminile}
+
+\section{Educazione}
+\cventry{2006--2011}{Master in Turismo e Sviluppo Internazionale}{Universit\`a di Fortaleza}{}{\textit{Brasile}}{Corsi seguiti: International tourism, Events management, Culinary arts, Airline and airport management, Sustainable tourism, Marketing, Leisure and entertainment.}  % arguments 3 to 6 can be left empty
+
+\section{Esperienze}
+
+\cventry{2013--2014}{Educatrice privata per la prima infanzia}{Amsterdam}{}{Olanda}{
+Ho lavorato come educatrice per la famiglia Jekeel. Le mie mansioni comprendevano l'insegnamento della lingua inglese e portoghese. Gestione del tempo libero a livello ludico e culturale.
+}
+
+\cventry{2010--2013}{Amministrazione Turismo}{Prefettura di Fortaleza}{}{Brasile}{
+Ho lavorato come responsabile del turismo per la prefettura della capitale dello Stato dello Cear\`a. Le mie mansioni consistevano in invio e archiviazione di documenti, servizio stampa, rapporti di qualit\`a/quantit\`a, controllo magazzino, human resources, ricezione e spedizione beni e servizio di primo contatto con fornitori e clienti.
+}
+
+\cventry{2008--2010}{Agente di Front Office}{Hotel Pais Tropical}{Fortaleza}{Brasile}{
+Gestione prenotazioni. Prima accoglienza clienti, grande attenzione nei dettagli, cortesia e professionalit\`a. Gestione dei pagamenti e tour guidati.}
+
+\cventry{2007--2008}{Amministrazione Logistica}{Variglog}{Fortaleza}{Brasile}{Gestione dell'inventario, ricezione e spedizione merci, tracciabilit\`a e gestione spedizioni. Ho anche amministrato i rapporti tra i fornitori e i clienti.}
+
+\cventry{2006--2007}{Coordinatrice eventi}{Segreteria del lavoro e sviluppo sociale}{Fortaleza}{Brasile}{Ho lavorato come coordinatrice generale di attivit\`a operative, le quali comprendevano un costante contatto e comunicazione con i committenti generali dei piani ed eventi. Ho stilato rapporti, analisi dei costi e delle risorse, stabilendo le date per gli eventi e allacciando nuovi contatti tra sponsor e investitori.}
+
+\cventry{2007--2012}{Volontaria UNICEF}{Chiesa Madonna delle Grazie}{Fortaleza}{Brasile}{La chiesa della Madonna delle Grazie a Fortaleza aiuta i bambini che vivono nelle favelas. Come volontaria ho organizzato eventi e manifestazioni per raccogliere fondi in aiuto di questi bambini.}
+
+
+\section{Lingue}
+\cvline{Portughese}{\textbf{Lingua Madre}}
+\cvline{Italiano}{\textbf{Fluente}}
+\cvline{Inglese}{\textbf{Fluente}}
+\cvline{Spagnolo}{\textbf{Limitato}}
+\cvline{Olandese}{\textbf{Limitato}}
+
+\section{Corsi extra-universitari}
+
+\cvline{}{Receptionist di hotel}
+\cvline{}{Servizio clientela}
+\cvline{}{Turismo sostenibile ed eco-solidale}
+\cvline{}{Coordinazione eventi}
+\cvline{}{Primo soccorso}
+
+
+\section{Interessi}
+\cvline{Sport}{jogging, surf, capoeira, jiu-jitsu}
+\cvline{Altro}{Viaggiare, leggere, cucinare}
+
+
+
+
+Autorizzo il trattamento dei dati personali contenuti nel mio curriculum vitae in base art. 13 del D. Lgs. 196/2003.
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

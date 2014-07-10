@@ -215,8 +215,8 @@
 \providecommand*{\homepagesymbol}{{\Large\ComputerMouse}}
 
 % colors
-\definecolor{firstnamecolor}{rgb}{0,0,0}
-\definecolor{familynamecolor}{rgb}{0,0,0}
+\definecolor{firstnamecolor}{rgb}{0.65,0.65,0.65}
+\definecolor{familynamecolor}{rgb}{0.45,0.45,0.45}
 \definecolor{titlecolor}{rgb}{0,0,0}
 \definecolor{addresscolor}{rgb}{0,0,0}
 \definecolor{quotecolor}{rgb}{0,0,0}

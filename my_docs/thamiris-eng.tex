@@ -1,0 +1,96 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[red]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Thamiris }
+\familyname{ Da Silva Lunes}
+\title{Resume Thamiris Da Silva Lunes}               % optional, remove the line if not wanted
+\mobile{mobile: +44 7454815454}
+\email{email: thamirislunes@hotmail.com}                      % optional, remove the line if not wanted
+\photo[64pt]{thamiris1}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{General information}
+\cvline{Year of birth}{1987}
+%\cvline{Nationality}{Italian}
+\cvline{Gender}{Female}
+
+\section{Education}
+\cventry{2006--2011}{MSc Tourism and hospitality}{FACE - Faculdade Evolutivo}{Fortaleza}{\textit{Brazil}}{International tourism, Events management, Culinary arts, Airline and airport management, Sustainable tourism, Marketing, Leisure and entertainment.}  % arguments 3 to 6 can be left empty
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2012--2013}{Au pair}{Family Jekeel}{Amsterdam}{The Netherlands}{My routine as au pair here is: I make their bags to school, help with their homework, play with them, bring them to home, pick them up in their activities and friends, bathing, cook, make the bottle for the baby, change diaper, tidy their room. As tourismologist, which involves work with leisure and entertainment, I like to create new games and activities in/outdoor.}\newline{}
+\cventry{2009--2012}{Volunteer For Children's Charity}{Pastoral da Crian\c {c}a}{Fortaleza}{Brazil}{Supported the development director of the regional charity, including collecting donations and community events.
+\begin{itemize}%
+\item Identified and developed corporate sponsorships
+\item Coordinated community events, liaising with a large network of volunteers
+\item Directly helped poor children in the \emph{brazilian favelas}
+\end{itemize}}
+
+\section{Language Skills}
+\cvline{Portuguese}{\textbf{Native} {\small C2, Mother Language}}
+\cvline{English}{\textbf{Full professional proficiency}}
+\cvline{Italian}{\textbf{Full professional proficiency}}
+\cvline{Dutch}{\textbf{Limited working proficiency}}
+
+\section{Interests}
+\cvline{Sports}{jogging, surfing, capoeira, jiu-jitsu}
+\cvline{Others}{travelling, reading, italian and brazilian cuisine}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
